@@ -11,3 +11,5 @@ venv/
 *.log
 staticfiles/
 media/
+.env
+__pycache__/
