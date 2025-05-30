@@ -1,0 +1,17 @@
+<!-- templates/products/partials/variants.html -->
+<table class="w-full mt-2 ml-4">
+  {% for variant in variants %}
+  <tr class="border-b">
+    <td class="p-1 {% if variant.stock < 5 %}text-red-600{% endif %}">
+      {{ variant.product.name}}
+    </td>
+     <td class="p-1 {% if variant.stock < 5 %}text-red-600{% endif %}">
+      {{ variant.brand}}
+    </td>
+      <td class="p-1 {% if variant.stock < 5 %}text-red-600{% endif %}">
+      {{ variant.stock }}
+    </td>
+   </td>
+  </tr>
+  {% endfor %}
+</table>
